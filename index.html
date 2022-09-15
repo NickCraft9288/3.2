@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input name attribute</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+</form>
+<fieldset>
+    <legend>select gender:</legend>
+
+    <div>
+      <input type="radio" id="huey" name="drone" value="huey"
+             checked>
+      <label for="huey">Male</label>
+    </div>
+
+    <div>
+      <input type="radio" id="dewey" name="drone" value="dewey">
+      <label for="dewey">Female</label>
+    </div>
+</fieldset>
+    
+    <form action="/action_page.php">
+        <label for="fname">Straat met huisnmer:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Post code:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+    
+      <label for="pet-select">select youre country:</label>
+
+<select name="pets" id="select youre country">
+    <option value="">--Please choose an option--</option>
+    <option value="nederlands">nederlands</option>
+    <option value="belgie">belgie</option>
+    <option value="duitseland">duitseland</option>
+    <option value="engeland">engeland</option>
+    <option value="america">america</option>
+    <option value="poland">poland</option>
+</select>
+<br>
+<label for="phone">Enter your bsn number:</label>
+
+<input type="text" id="bsn" name="bsn"
+       pattern="[0-9]-[0-9]-[0-9]-[0-9]-[0-9]-[0-9]-[0-9]-[0-9]-[0-9]"
+       required>
+<br>
+<br>
+       <select name="pets" id="select youre country where you wanna go">
+        <option value="">--select youre country where you wanna go--</option>
+        <option value="nederlands">nederlands</option>
+        <option value="belgie">belgie</option>
+        <option value="duitseland">duitseland</option>
+        <option value="engeland">engeland</option>
+        <option value="america">america</option>
+        <option value="poland">poland</option>
+    </select>
+<br>
+<br>
+    <form action="/action_page.php">
+        <label for="birthday">vetrek:</label>
+        <input type="date" id="birthday" name="birthday">
+
+      </form>
+<br>
+<br>
+<form action="/action_page.php">
+    <label for="birthday">terugkomst:</label>
+    <input type="date" id="birthday" name="birthday">
+   
+  </form>
+  <br>
+  <form action="/action_page.php">
+    <label for="quantity">How many people:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="100">
+    </form>
+<br>
+    <form action="/action_page.php">
+        <label for="lname">Mail:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+<br>
+<div>
+    <label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>
+<br>
+      <div>
+        <input type="submit" value="Verzenden" name="submit">
+    </div>
+</body>
+</html>
